@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Drive API Quickstart</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+
+    <p>Drive API Quickstart</p>
+
+    <!--Add buttons to initiate auth sequence and sign out-->
+    <button id="authorize_button" style="display: none;">Authorize</button>
+    <button id="signout_button" style="display: none;">Sign Out</button>
+
+    <pre id="content"></pre>
+
+    <!-- Display login status -->
+    <div id="status"></div>
+
+    <!-- Facebook login or logout button -->
+    <a href="javascript:void(0);" onclick="fbLogin()" id="fbLink"><img src="fblogin.png"/></a>
+
+    <!-- Display user profile data -->
+    <div id="userData"></div>
+
+    <!-- <img id="myimage" onclick="changeImage()" src="https://lh3.googleusercontent.com/m3fCI5HYK6odCjoL7WkJ0tX0tkYwyb4lO179DCMczECfh7AWnO8aawKeKtbN_8Y1MdrDyk_zUBE=s220">
+ -->
+    <script src="js/myscript.js"></script>
+    <!-- <script src="js/require.js"></script> -->
+    <!-- <script data-main="js/myscript" src="js/require.js"></script> -->
+    
+    <script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
+  </body>
+</html>
